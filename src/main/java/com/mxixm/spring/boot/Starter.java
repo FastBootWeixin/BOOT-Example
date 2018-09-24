@@ -1,13 +1,13 @@
-    package com.mxixm.spring.boot;
+package com.mxixm.spring.boot;
 
-    import org.springframework.boot.SpringApplication;
-    import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-    @SpringBootApplication
-    public class Starter {
+@SpringBootApplication
+public class Starter {
 
-        public static void main(String[] args) {
-            SpringApplication.run(Starter.class);
-        }
-
+    public static void main(String[] args) {
+        SpringApplication.run(Starter.class);
     }
+
+}
