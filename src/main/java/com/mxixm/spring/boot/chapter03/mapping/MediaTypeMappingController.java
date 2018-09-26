@@ -1,5 +1,6 @@
 package com.mxixm.spring.boot.chapter03.mapping;
 
+import com.mxixm.spring.boot.chapter03.entity.MyData;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,31 +50,6 @@ public class MediaTypeMappingController {
         myData.setFirstName("Guang");
         myData.setLastName("shan");
         return myData;
-    }
-
-    // 测试的数据定义
-    @XmlRootElement // 标记该类型可被转换为XML
-    private static class MyData {
-
-        private String firstName;
-
-        private String lastName;
-
-        public String getFirstName() {
-            return firstName;
-        }
-
-        public void setFirstName(String firstName) {
-            this.firstName = firstName;
-        }
-
-        public String getLastName() {
-            return lastName;
-        }
-
-        public void setLastName(String lastName) {
-            this.lastName = lastName;
-        }
     }
 
 }
