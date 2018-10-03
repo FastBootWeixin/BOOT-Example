@@ -3,6 +3,7 @@ package com.mxixm.spring.boot.chapter03.argument;
 import com.mxixm.spring.boot.chapter03.entity.MyPostData;
 import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.MultiValueMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -108,6 +109,11 @@ public class ArgumentResolveController {
     public String postEntity(HttpEntity<MyPostData> myPostData) {
         System.out.println(myPostData.getHeaders());
         System.out.println(myPostData.getBody());
+        return "argumentView";
+    }
+
+    @GetMapping("/redirectAttribute")
+    public String redirectAttribute(Model model) {
         return "argumentView";
     }
 

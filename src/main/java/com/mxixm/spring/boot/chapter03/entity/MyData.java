@@ -10,6 +10,16 @@ public class MyData {
 
     private String lastName;
 
+    private String fullName;
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -26,4 +36,12 @@ public class MyData {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "MyData{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", fullName='" + fullName + '\'' +
+                '}';
+    }
 }

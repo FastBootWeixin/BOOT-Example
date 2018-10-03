@@ -13,7 +13,7 @@ public class MethodMappingController {
         return "index";
     }
 
-    @RequestMapping(path = "path1", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(path = "path1", method = RequestMethod.POST)
     public String path2() {
         return "index";
     }
