@@ -21,7 +21,7 @@ public class HandlerMappingConfig {
         SimpleUrlHandlerMapping mapping = new SimpleUrlHandlerMapping();
         // 设置高优先
         mapping.setOrder(Ordered.HIGHEST_PRECEDENCE);
-        mapping.setUrlMap(Collections.singletonMap("httpRequestHandler",
+        mapping.setUrlMap(Collections.singletonMap("/httpRequestHandler",
                 new MyHttpRequestHandler()));
         return mapping;
     }
